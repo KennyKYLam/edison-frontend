@@ -1,0 +1,59 @@
+html
+    head
+        title "BlackBox"
+        script(src="/js/script.js")
+        script(src="/socket.io/socket.io.js")
+        script(src="/js/webmain.js")
+        script(src="https://www.google.com/jsapi")
+        script(src="https://code.jquery.com/jquery-1.11.2.min.js")
+        link(href='css/style.css', rel='stylesheet', type='text/css')
+    body
+    #header
+        #title
+            #fancy-font
+                h1 Welcome to BlackBox
+            #nav
+                ul
+                    li Controls
+                    li Stats
+                    li About
+    #camera-view
+        #container(style="display:none")
+            | <video autoplay></video>
+            canvas(width="640", height="480")
+        #container2
+            img#opencv
+
+
+    #controls.content
+        #opendoor
+        #ringalarm
+
+    #stats.content
+        #lastopened
+        #tempgraph
+
+    #about.content
+        p blah blah blah
+
+    #photo-stream
+        #container
+            h2 Here are some of your last few pictures;
+            #row
+                #col-xs-12
+                    #picture-content
+                        #col-xs-12.col-sm-6.col-md-4.col-lg-4
+                            #photo-box
+                                #image-wrap
+
+                                #description
+                                    p No description yet
+    footer
+        .container
+            .row
+                .col-xs-12
+                    h4 Get in touch
+                    p.about-text So yeah, that's all for now.
+                    a.contact-now-btn(href='mailto:')
+                        | Contact
+                        | Me

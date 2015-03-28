@@ -1,0 +1,148 @@
+/*
+* Custom variables
+*/
+$main-font: 'Lato', sans-serif;
+$sub-font: 'Montserrat', sans-serif;
+$fancy-font: 'Kaushan Script', cursive;
+$font-size: 16px;
+
+$black: #000;
+$white: #FFF;
+$grey: #585c65;
+$mediumgrey: #9b9b9b;
+$lightgrey: #eeeeee;
+$blue: #3466a1;
+$lightgreen: #33ff00;
+$padding: 10px;
+$margin: 10px;
+$screen-sm:768px;
+$screen-md:992px;
+$screen-lg:1200px;
+
+* {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.nav {
+  background: $white;
+  li {
+    float: left;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0s;
+    overflow: hidden;
+  }
+  a:link, a:visited {
+    display: block;
+    width: 120px;
+    font-weight: bold;
+    color: grey;
+    background-color: $white;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  a:hover, a:active {
+    background-color: darken($white, 5%);
+  }
+}
+
+.fancy-font {
+  font-family: $fancy-font;
+}
+
+.photo-stream {
+  margin: 0 0 $margin*3 0;
+  .image-wrap {
+    img {
+      width: 100%;
+    }
+  }
+  .description {
+    font-family: $sub-font;
+    font-size: 12px;
+    background: $white;
+    color: $mediumgrey;
+    letter-spacing: 1px;
+    padding: $padding*1.5;
+    height: 75px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.camera-view {
+   .camera1 {
+     float: left;
+     width: 40%;
+   }
+   .camera2 {
+     float: right;
+     width: 40%;
+   }
+ }
+
+footer {
+  background: $white;
+  padding: $padding*3 0;
+  text-align: center;
+
+  @media screen and (min-width: $screen-lg) {
+    padding: $padding*10 0;
+  }
+
+  h4 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $mediumgrey;
+  }
+
+  .about-text {
+    padding: 0 $padding*3;
+    color: $mediumgrey;
+    @media screen and (min-width: $screen-lg) {
+      width: 650px;
+      margin: 0 auto;
+    }
+  }
+
+  .contact-now-btn {
+    display: inline-block;
+    width: 70%;
+    padding: $padding*2 $padding*5;
+    margin-top: $margin*2;
+    color: $white;
+    background: $grey;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $screen-md) {
+      width: 60%;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      width: 20%;
+      margin-top: $margin*5;
+    }
+
+    &:hover {
+      background: lighten($grey, 5%);
+    }
+  }
+}
+
+
+
+$font-family-sans-serif: $main-font;
+
+@import 'bootstrap.css';

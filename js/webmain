@@ -1,0 +1,22 @@
+$("#opendoor").click(function() {
+
+})
+
+$("#ringalarm").click(function() {
+
+})
+
+$("#controls").click(function() {
+    $(".content").hide();
+    $("#controls").show();
+})
+
+$("#stats").click(function() {
+    $(".content").hide();
+    $("#stats").show();
+})
+
+$("#about").click(function() {
+    $(".content").hide();
+    $("#about").show();
+})

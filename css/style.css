@@ -1,0 +1,99 @@
+/*
+* Custom variables
+*/
+@import url(bootstrap.css);
+* {
+  position: relative;
+  box-sizing: border-box; }
+
+.nav {
+  background: #FFF; }
+  .nav li {
+    float: left; }
+  .nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0s;
+    overflow: hidden; }
+  .nav a:link, .nav a:visited {
+    display: block;
+    width: 120px;
+    font-weight: bold;
+    color: grey;
+    background-color: #FFF;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase; }
+  .nav a:hover, .nav a:active {
+    background-color: #f2f2f2; }
+
+.fancy-font {
+  font-family: "Kaushan Script", cursive; }
+
+.photo-stream {
+  margin: 0 0 30px 0; }
+  .photo-stream .image-wrap img {
+    width: 100%; }
+  .photo-stream .description {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    background: #FFF;
+    color: #9b9b9b;
+    letter-spacing: 1px;
+    padding: 15px;
+    height: 75px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+
+.camera-view .camera1 {
+  float: left;
+  width: 40%; }
+.camera-view .camera2 {
+  float: right;
+  width: 40%; }
+
+footer {
+  background: #FFF;
+  padding: 30px 0;
+  text-align: center; }
+  @media screen and (min-width: 1200px) {
+    footer {
+      padding: 100px 0; } }
+  footer h4 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #9b9b9b; }
+  footer .about-text {
+    padding: 0 30px;
+    color: #9b9b9b; }
+    @media screen and (min-width: 1200px) {
+      footer .about-text {
+        width: 650px;
+        margin: 0 auto; } }
+  footer .contact-now-btn {
+    display: inline-block;
+    width: 70%;
+    padding: 20px 50px;
+    margin-top: 20px;
+    color: #FFF;
+    background: #585c65;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase; }
+    @media screen and (min-width: 992px) {
+      footer .contact-now-btn {
+        width: 60%; } }
+    @media screen and (min-width: 1200px) {
+      footer .contact-now-btn {
+        width: 20%;
+        margin-top: 50px; } }
+    footer .contact-now-btn:hover {
+      background: #646873; }
+
+/*# sourceMappingURL=style.css.map */
